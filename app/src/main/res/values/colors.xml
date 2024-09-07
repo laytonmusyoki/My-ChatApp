@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whatsap_bg">#F4F4F4</color>
+    <color name="light_black">#EC212020</color>
+    <color name="deep_black">#141212</color>
+    <color name="greenish">#69F0AE</color>
+</resources>

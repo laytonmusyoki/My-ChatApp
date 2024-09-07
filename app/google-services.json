@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "59213565649",
+    "project_id": "lm-whatsap",
+    "storage_bucket": "lm-whatsap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59213565649:android:15b486d8f448cde90efff0",
+        "android_client_info": {
+          "package_name": "com.example.lmwhatsap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPIsgpNFlYqT-ON2YMuTIppfk0eHQjXtk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
