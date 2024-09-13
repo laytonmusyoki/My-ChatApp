@@ -12,7 +12,6 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -28,7 +27,6 @@ class ChatActivity : AppCompatActivity() {
     lateinit var messageData:EditText
     lateinit var submitMessage: ImageView
     lateinit var dbRef:DatabaseReference
-    lateinit var swipeRefreshLayout: SwipeRefreshLayout
 
     var ReceiverRoom:String?=null
     var SenderRoom:String?=null
@@ -40,7 +38,6 @@ class ChatActivity : AppCompatActivity() {
         recyclerView=findViewById(R.id.recyclerview)
         messageData=findViewById(R.id.messageData)
         submitMessage=findViewById(R.id.submitMessage)
-        swipeRefreshLayout=findViewById(R.id.swipe_refresh_layout)
 
 
         val username=intent.getStringExtra("name")
@@ -50,7 +47,6 @@ class ChatActivity : AppCompatActivity() {
         SenderRoom=ReceiverUid + SenderUid
         ReceiverRoom=SenderUid + ReceiverUid
         dbRef=FirebaseDatabase.getInstance().getReference()
-
 
         submitMessage.setOnClickListener{
             val message:String=messageData.text.toString()
